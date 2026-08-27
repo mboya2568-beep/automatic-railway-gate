@@ -1,0 +1,6 @@
+|  Time | Train Sensor | Gate   | Red Light | Green Light |
+| ----: | -----------: | ------ | --------: | ----------: |
+|  0 ns |            0 | OPEN   |         0 |           1 |
+| 10 ns |            0 | OPEN   |         0 |           1 |
+| 30 ns |            1 | CLOSED |         1 |           0 |
+| 60 ns |            0 | OPEN   |         0 |           1 |

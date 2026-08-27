@@ -1,0 +1,72 @@
+# Automatic Railway Gate Controller using Verilog
+
+## Description
+
+This project implements an Automatic Railway Gate Controller using Verilog HDL.
+
+The system uses a train sensor to automatically control the railway gate and
+traffic signal lights.
+
+## Features
+
+- Automatic railway gate control
+- Train detection using sensor
+- Red light when train is detected
+- Green light when no train is detected
+- Reset functionality
+- Verilog testbench for simulation
+
+## Inputs
+
+| Input | Description |
+|-------|-------------|
+| clk | System clock |
+| reset | Reset signal |
+| train_sensor | Detects the presence of a train |
+
+## Outputs
+
+| Output | Description |
+|--------|-------------|
+| gate_open | 1 = Gate Open, 0 = Gate Closed |
+| red_light | 1 = Train detected |
+| green_light | 1 = No train detected |
+
+## Working
+
+When no train is detected:
+
+- Gate remains OPEN
+- Green light is ON
+- Red light is OFF
+
+When a train is detected:
+
+- Gate becomes CLOSED
+- Red light is ON
+- Green light is OFF
+
+After the train passes:
+
+- Gate becomes OPEN
+- Green light turns ON
+- Red light turns OFF
+
+## Simulation
+
+The design can be simulated using:
+
+- Icarus Verilog
+- ModelSim
+- QuestaSim
+- Vivado
+
+## Files
+
+- `railway_gate.v` - Main Verilog design
+- `railway_gate_tb.v` - Testbench
+- `README.md` - Project documentation
+
+## Author
+
+Manasa Boya
